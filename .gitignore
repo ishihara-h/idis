@@ -1,0 +1,7 @@
+*.bin
+*.hex
+*.cfg
+*.err
+*.BIN
+*.asm
+*.org
