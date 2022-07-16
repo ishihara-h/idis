@@ -6,7 +6,7 @@ cursesを使用し、必要部分のみをディスアセンブルすること�
 付加された情報は別ファイルに保存することが出来る。
 
 起動方法
-ruby disasm.rb [target_file]
+ruby idis.rb [target_file]
 
 コマンド
 j または DOWNキー     1行下へ
@@ -27,7 +27,7 @@ W                     付加情報(ラベル、コメント、オフセット等
 S                     逆アセンブル結果をファイルに書き出す(ファイル名.asm)
 
 注意点
-・disasm.rb内のrequireを書き換えることで、ターゲットを切り替える。
+・idis.rb内のrequireを書き換えることで、ターゲットを切り替える。
   require "./cdp1802.rb"でCOSMACに対応し、require "./i8080.rb"で8080に対応する
 ・インテルhexフォーマットは必要最小限しか理解しない
 ・Windowsでは「Curses.ESCDELAY=」でエラーが発生するが、
